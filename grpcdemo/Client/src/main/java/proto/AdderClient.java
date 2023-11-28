@@ -8,7 +8,7 @@ public class AdderClient {
     public static void main(String[] args) {
         try {
             // Obținere referință la obiectul remote din RMI Registry
-            Adder adder = (Adder) Naming.lookup("rmi://10.53.53.11/AdderService");
+            Adder adder = (Adder) Naming.lookup("rmi://10.53.53.11/1099/AdderService");
 
             // Definire numere pentru adunare
             int num1 = 5;
