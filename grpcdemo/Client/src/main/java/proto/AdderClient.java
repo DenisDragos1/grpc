@@ -8,7 +8,7 @@ public class AdderClient {
     public static void main(String[] args) {
         try {
             // Specificați adresa IP și portul
-            String ipAddress = "10.53.53.11";
+            String ipAddress = "192.168.37.212";
             int port = 1099;
 
             // Obțineți referința la obiectul remote din RMI Registry
