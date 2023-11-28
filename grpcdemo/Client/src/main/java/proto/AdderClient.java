@@ -7,17 +7,15 @@ import java.rmi.Naming;
 public class AdderClient {
     public static void main(String[] args) {
         try {
-            // Obținere referință la obiectul remote din RMI Registry
-            Adder adder = (Adder) Naming.lookup("rmi://10.53.53.11:1099/AdderService");
+            // Specificați adresa IP și portul
+            String ipAddress = "10.53.53.11";
+            int port = 1099;
 
-            // Definire numere pentru adunare
-            int num1 = 5;
-            int num2 = 10;
+            // Obțineți referința la obiectul remote din RMI Registry
+            Adder adder = (Adder) Naming.lookup("rmi://" + ipAddress + ":" + port + "/AdderService");
 
-            // Invocare metoda remote pentru adunare
-            int result = adder.add(num1, num2);
-
-            // Afișare rezultat
+            // Restul codului clientului rămâne neschimbat
+            int result = adder.add(5, 10);
             System.out.println("Rezultat adunare: " + result);
         } catch (Exception e) {
             System.err.println("Eroare la invocarea metodei remote: " + e.getMessage());
@@ -25,3 +23,4 @@ public class AdderClient {
         }
     }
 }
+

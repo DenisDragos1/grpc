@@ -1,7 +1,6 @@
 package proto;
 import services.Adder;
 import services.AdderImpl;
-
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
