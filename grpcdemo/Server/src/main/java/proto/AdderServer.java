@@ -10,7 +10,7 @@ public class AdderServer {
     public static void main(String[] args) {
         try {
             // Specificați adresa IP și portul
-            String ipAddress = "192.168.56.1";
+            String ipAddress = "10.53.53.11";
             int port = 1099;
 
             // Creați un registrul RMI pe adresa IP și portul specificate
